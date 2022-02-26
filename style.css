@@ -1,0 +1,162 @@
+.basic-font {
+    font-family: 'Audiowide', cursive;
+}
+a {
+    font-family: 'Audiowide', cursive;
+    text-decoration: none;
+}
+.headbtn {
+    padding: 10px 40px;
+    font-size: 25px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .headbtn:before {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+    z-index: -1;
+    background-color: #008542!important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+   }
+   
+   .headbtn:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .headbtn:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+   }
+   
+   .headbtn:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+   }
+   
+   .headbtn:active {
+    transform: translateY(4px);
+   }
+   
+   .headbtn:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+   }
+
+header {
+    position:fixed;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+.back {
+   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+   background-size: 800% 400%;
+   padding: 1em 2em;
+   display: inline-block;
+   border: none;
+   border-radius: 10px;
+   font-size: 17px;
+   font-weight: 700;
+   color: white;
+   transition: all .5s ease-in-out;
+   animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   font-size: 100%;
+  }
+  
+  .back:hover {
+   animation: gradient 3s infinite;
+   transform: scale(1.05);
+  }
+  
+  .back:active {
+   animation: gradient 3s infinite;
+   transform: scale(0.8);
+  }
+  
+  @keyframes gradient {
+   0% {
+    background-position: 0% 50%;
+   }
+  
+   50% {
+    background-position: 100% 50%;
+   }
+  
+   100% {
+    background-position: 0% 50%;
+   }}
+.card {
+   width: 190px;
+   height: 254px;
+   border-radius: 20px;
+   padding: 5px;
+   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+   font-family: 'Audiowide', cursive;
+  }
+#cards {
+    display: flex;
+    justify-content: center;
+}
